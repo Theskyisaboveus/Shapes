@@ -61,13 +61,6 @@ public class Shapes
                 {
                     System.out.println("Length: " + ((Rectangle)shape).Length());
                     System.out.println("Width: " + ((Rectangle)shape).Width());
-                    if(shape instanceof Cuboid)
-                    {
-                        System.out.println("Height: "+((Cuboid)shape).Height());
-                        System.out.println("Faces: " + ((Cuboid)shape).Faces());
-                        System.out.println("Cross Sectional Shape: "+((Cuboid)shape).CrossSectionalShape());
-                        System.out.println("Volume: "+((Cuboid)shape).Volume());
-                    }
                 }  
             }
             if(shape instanceof Circle)
@@ -75,13 +68,13 @@ public class Shapes
                 System.out.println("Radius: "+((Circle)shape).Radius());
                 System.out.println("Circumference: "+((Circle)shape).Circumference());
                 System.out.println("Diameter: "+((Circle)shape).Diameter());
-                if(shape instanceof Cylinder)
-                {
-                    System.out.println("Height: "+((Cylinder)shape).Height());
-                    System.out.println("Faces: " + ((Cylinder)shape).Faces());
-                    System.out.println("Cross Sectional Shape: "+((Cylinder)shape).CrossSectionalShape());
-                    System.out.println("Volume: "+((Cylinder)shape).Volume());
-                }
+            }
+            if(shape instanceof ThreeDimensionalObject)
+            {
+                System.out.println("Height: "+((ThreeDimensionalObject)shape).Height());
+                System.out.println("Faces: " + ((ThreeDimensionalObject)shape).Faces());
+                System.out.println("Cross Sectional Shape: "+((ThreeDimensionalObject)shape).CrossSectionalShape());
+                System.out.println("Volume: "+((ThreeDimensionalObject)shape).Volume());
             }
         }
     }
