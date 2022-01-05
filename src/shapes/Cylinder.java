@@ -14,7 +14,7 @@ public class Cylinder extends Circle implements ThreeDimensionalObject
     @Override
     public int Faces()
     {
-        return 2;
+        return 3;
     }
     @Override
     public double Height()
